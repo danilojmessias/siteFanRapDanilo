@@ -1,0 +1,62 @@
+main {
+  width: 100%;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  color: goldenrod;
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  article {
+    padding: 2px;
+    margin-top: 20px;
+    width: 40%;
+    height: 20vh;
+    border: 2px solid #ccc;
+  }
+}
+@media (max-width: 767px) {
+  article {
+    padding: 2px;
+    margin-top: 20px;
+    width: 40%;
+    height: 35vh;
+    border: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 992px) {
+  #intro {
+    
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #intro {
+    padding: 2px;
+    font-size: 20px;
+  }
+}
+#intro {
+  display: flex;
+  flex-direction: row;
+}
+
+#background {
+  width: 100%;
+  border: none;
+}
+
+#img-background {
+  width: 100%;
+}

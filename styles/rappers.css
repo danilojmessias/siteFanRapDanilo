@@ -1,0 +1,42 @@
+main {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2px;
+}
+#row{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 992px) {
+    main{
+        width: 80%;
+    }
+  main article {
+    display: inline-block;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 50px; /* Bordas arredondadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+  }
+  article img {
+    width: 480px;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+  main article:hover {
+    transform: scale(1.05); /* Aumenta o tamanho da imagem */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+  }
+
+  main article:hover img {
+    transform: scale(1.1); /* Aproxima ainda mais a imagem */
+  }
+}
+@media (max-width: 767px) {
+  article {
+    padding: 2px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <title>RapFan</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="../pages/rappers.html">Rappers</a>
+        <a href="../pages/about.html">Sobre</a>
+        <a href="../pages/contact.html">Contate-nos</a>
+      </nav>
+    </header>
+    <main>
+      <section id="form-section">
+        <form id="myForm">
+          <label for="firstName">Nome:</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            required
+          /><br /><br />
+
+          <label for="lastName">Sobrenome:</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+          /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="age">Idade:</label>
+          <input type="number" id="age" name="age" required /><br /><br />
+
+          <label for="favoriteRapper">Rapper Favorito:</label>
+          <input
+            type="text"
+            id="favoriteRapper"
+            name="favoriteRapper"
+            required
+          /><br /><br />
+
+          <button type="button" onclick="displayData()">Enviar</button>
+          <button type="button" onclick="clearForm()">Limpar</button>
+        </form>
+      </section>
+      <section id="resultContainer">
+
+      </section>
+    </main>
+    <script src="../scripts/contact.js"></script>
+  </body>
+</html>
